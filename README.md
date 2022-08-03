@@ -97,6 +97,13 @@ $ time ./print_tests.py tests/ | xargs -n 1 -P 8 python3 -m unittest
 ...
 ...
 
+>>> stopping test: TestFoo.test_foo_5 (0:00:05.005108)
+.
+----------------------------------------------------------------------
+Ran 1 test in 5.006s
+
+OK
+
 >>> stopping test: TestFoo.test_foo_6 (0:00:05.002082)
 .
 ----------------------------------------------------------------------
@@ -111,4 +118,4 @@ sys	0m0.604s
 
 (you can omit the `time` usage if you dont need it)
 
-As you can see, execution of all demo test cases dropped from 90s to 15s thanks to running 8 tests at once in parallel. This technique can be expanded upon to suite other testing needs. 
+As you can see, execution of all demo test cases dropped from 90s to 15s thanks to running 8 tests at once in parallel. This technique can be expanded upon to suite other testing needs.
